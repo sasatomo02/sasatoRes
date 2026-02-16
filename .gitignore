@@ -1,0 +1,12 @@
+# ビルド成果物
+build/
+out/
+
+# IDEの設定 (IntelliJ)
+.idea/
+*.iml
+.gradle/
+
+# OS固有のゴミ
+*.DS_Store
+Thumbs.db
