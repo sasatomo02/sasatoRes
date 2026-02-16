@@ -72,7 +72,7 @@ public class SasatoRes<T> {
         private final String requestDetails;
 
         // サニタイズ用正規表現：password, token, secret, auth などを検知
-        private static final Pattern SENSITIVE_PATTERN =
+        public static final Pattern SENSITIVE_PATTERN =
                 Pattern.compile("(?i)(password|token|secret|apiKey|auth|credential|card_no)=[^&\\s,]*");
 
         public ErrorDetails(String code, String message, Optional<Throwable> throwable, String requestDetails) {
